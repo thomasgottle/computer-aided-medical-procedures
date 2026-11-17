@@ -1,0 +1,11 @@
+{
+  // Hide each practical's Python environment and notebook checkpoints
+  // from the explorer and search. Patterns apply to every practical folder.
+  "files.exclude": {
+    "**/.venv313": true,
+    "**/.ipynb_checkpoints": true
+  },
+  "search.exclude": {
+    "**/.venv313": true
+  }
+}
