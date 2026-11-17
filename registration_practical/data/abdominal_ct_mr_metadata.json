@@ -1,0 +1,43 @@
+{
+  "source": "old version/camp-i-exercise-registration-main/intensity-based/SITK registration/data",
+  "plane_index_z": 86,
+  "plane_origin_physical": [
+    0.0,
+    0.0,
+    172.0
+  ],
+  "size_xyz": [
+    192,
+    160,
+    192
+  ],
+  "spacing_xyz": [
+    2.0,
+    2.0,
+    2.0
+  ],
+  "origin_xyz": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "direction": [
+    -1.0,
+    2.4492937051703357e-16,
+    0.0,
+    -2.4492937051703357e-16,
+    -1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "preparation": "Same physical axial plane on verified identical grids; no fitted transform applied.",
+  "limitation": "No independently validated CT-MR alignment, landmarks, patient identifiers or original acquisition provenance supplied. Shared geometry does not establish anatomical correspondence.",
+  "sha256": {
+    "ct.nii.gz": "a3d277024764f6870f97dd82ddef0f0c86da226df787df570dd7584cad472c1d",
+    "mr.nii.gz": "770de0538012f11c5142ed777793f32573cc0e62a5991090f2510065577626f5"
+  },
+  "registration_intensities": "Source units with Gaussian sigma 0.65 pixels; no clipping, range rescaling or histogram matching. Display windows are separate.",
+  "metric_domain": "Full valid image overlap, including real background; no circular/anatomical ROI. Exclude only out-of-image samples and generated padding."
+}

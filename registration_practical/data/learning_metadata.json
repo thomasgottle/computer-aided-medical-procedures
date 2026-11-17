@@ -1,0 +1,47 @@
+{
+  "torch": "2.15.0",
+  "device": "cpu",
+  "threads": 2,
+  "parameters": 11322,
+  "slice_indices": {
+    "train": [
+      48,
+      52,
+      56,
+      60,
+      64,
+      68,
+      72,
+      76,
+      80,
+      84,
+      88,
+      92,
+      96
+    ],
+    "test": [
+      104,
+      108,
+      112,
+      116
+    ]
+  },
+  "source_sha256": "a3d277024764f6870f97dd82ddef0f0c86da226df787df570dd7584cad472c1d",
+  "image_shape": [
+    128,
+    128
+  ],
+  "pixel_spacing_mm": 2.0,
+  "preparation": "Native 128x128 center crop, CT window [-150,250], sigma .8, no resizing or downsampling; source pixel lattice used for generated motion.",
+  "motion": "3x3 uniform random control offsets, bicubic interpolation, and random translation; truth = 12*tanh(0.6*local + 0.4*translation). Same generator in both splits.",
+  "evaluation": "Disjoint source slices from one volume; not independent patients. Known synthetic motion is excluded from loss.",
+  "weight": 0.01,
+  "learning_rate": 0.001,
+  "batch_size": 8,
+  "generated_control_nodes": 3,
+  "predicted_control_nodes": 5,
+  "architecture": "Coarse 5x5 control prediction; bicubic upsampling then 12*tanh bounding.",
+  "interpretation": "Broad controlled regional motion, not a physiological or biomechanical simulation.",
+  "motion_amplitude": 12.0,
+  "architecture_version": "coarse5x5_motion12_v2"
+}
